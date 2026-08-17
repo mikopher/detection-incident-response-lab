@@ -1,0 +1,19 @@
+# Virtual machine files
+*.vmdk
+*.vmx
+*.vmem
+*.vmsn
+*.vmss
+*.nvram
+*.vdi
+*.ova
+*.iso
+
+# Local lab folders that should not be pushed
+VMs/
+ISOs/
+
+# OS/editor junk
+.DS_Store
+Thumbs.db
+.vscode/
