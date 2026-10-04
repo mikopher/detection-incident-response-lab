@@ -1,0 +1,12 @@
+<group name="local,windows,account_discovery,">
+
+  <rule id="100100" level="10">
+    <if_sid>92031</if_sid>
+    <field name="win.eventdata.commandLine" type="pcre2">(?i)(?:net|net1)(?:\.exe)?\s+user\b</field>
+    <description>Custom detection: Local account discovery using net user</description>
+    <mitre>
+      <id>T1087.001</id>
+    </mitre>
+  </rule>
+
+</group>
