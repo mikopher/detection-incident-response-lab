@@ -1,0 +1,15 @@
+flowchart LR
+    A["Windows 11 Endpoint<br/>WIN-ENDPOINT"]
+    B["Windows Security Logs<br/>+ Sysmon"]
+    C["Wazuh Agent"]
+    D["Wazuh Manager<br/>Ubuntu Server"]
+    E["Wazuh Indexer"]
+    F["Wazuh Dashboard<br/>Threat Hunting"]
+    G["Custom Detection Rule<br/>Rule 100100"]
+
+    A --> B
+    B --> C
+    C --> D
+    G --> D
+    D --> E
+    E --> F
